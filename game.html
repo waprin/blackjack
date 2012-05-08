@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html>                                                                  
+ <head>                                         
+<title> nothing </title> 
+ <script type="text/javascript" src="jquery-1.5.js"></script>          
+ <script type="text/javascript" src="jquery-ui.js"> </script>
+ <script type="text/javascript" src="blackjack.js"> </script>                                                              
+ <style type="text/css">
+ #deckContainer
+ {
+	height: 100px;
+	width: 100%;
+ }
+ #dealerContainer 
+ {
+	position: relative;
+	width:50%;
+	margin-bottom:150px;
+ }
+ 
+ #small-card
+ {
+    display: none;
+	position: absolute;
+	top: 0px;
+	left: 340px;
+ }
+ 
+ #deck-image
+ {
+	position: absolute;
+	top: 0px;
+	left: 340px;
+ }
+ 
+ </style>
+ 
+ </head>                                                                  
+ <body>      
+ <div id ="outerContainer">
+ <div id="deckContainer">
+<!--	<img id="deck-image" src="classic-cards/b2fv.png" width="71" height="96"/>-->
+	<img id="small-card" src="classic-cards/b2fv.png" width="35" height="48" />
+ </div>
+ <div id="dealerContainer">
+ </div>
+<div id="container" style="position: relative; left: 0px; height:250px; width:100%">
+ </div>
+<div class="start-game-area">
+	<button id="deal">Deal</button>
+	<button id="hit">Hit</button>
+	<button id="stand">Stand</button>
+	<button id="split">Split</button>
+	<button id="dd">DD</button>
+	<button id="animate">Animate</button>
+</div>
+<div id="player-score">
+Player Score:  
+<div id="player-score-value"> </div>
+</div>
+<div id="player-chips">
+Player Chips:
+   <div id="player-chips-value">
+   </div>
+</div>
+</div>
+ </body>                                                                 
+ </html>
